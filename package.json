@@ -1,0 +1,34 @@
+{
+  "name": "achingbrain-www",
+  "version": "1.0.0",
+  "description": "Alex's blog",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha test",
+    "coveralls": "istanbul cover _mocha test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/achingbrain/achingbrain-www.git"
+  },
+  "dependencies": {
+    "express": "^4.0",
+    "express3-handlebars": "^0.5",
+    "winston": "^0.7",
+    "underscore.string": "^2.3",
+    "wantsit": "^1.0",
+    "rc": "^0.4"
+  },
+  "devDependencies": {
+    "grunt-browserify": "^2.0",
+    "grunt-contrib-watch": "^0.6",
+    "grunt-contrib-less": "^0.11",
+    "mocha": "^1.0",
+    "chai": "^1.0",
+    "sinon": "^1.8",
+    "istanbul": "^0.2",
+    "coveralls": "^2.8",
+    "testsuite": "^1.0"
+  }
+}

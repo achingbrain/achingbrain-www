@@ -1,18 +1,28 @@
 {{>header}}
-
-<h1>{{meta.title}}</h1>
-
-{{{markdown article}}}
-
-<nav>
-  <ul>
-    {{#if meta.previous}}
-      <li>Prev: <a href="/{{meta.previous.slug}}">{{meta.previous.title}}</a></li>
-    {{/if}}
-    {{#if meta.next}}
-      <li>Next: <a href="/{{meta.next.slug}}">{{meta.next.title}}</a></li>
-    {{/if}}
-  </ul>
-</nav>
-
+    <div class="bg"></div>
+    <div class="jumbotron">
+      <h1>{{meta.title}}
+        {{#if meta.subtitle}}
+          <small>{{meta.subtitle}}</small>
+        {{/if}}
+      </h1>
+      <p>{{articleDate meta.date}}</p>
+    </div>
+    <div class="row">
+      <article class="col-md-10 col-md-offset-1">
+        {{{markdown article}}}
+      </article>
+    </div>
+    <div class="row">
+      <nav class="col-md-10 col-md-offset-1">
+        <ul>
+          {{#if meta.previous}}
+            <li>Prev: <a href="/{{meta.previous.slug}}">{{meta.previous.title}}</a></li>
+          {{/if}}
+          {{#if meta.next}}
+            <li>Next: <a href="/{{meta.next.slug}}">{{meta.next.title}}</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+    </div>
 {{>footer}}

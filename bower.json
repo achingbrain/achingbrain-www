@@ -9,6 +9,6 @@
   ],
   "dependencies": {
     "bootstrap": "^3.0",
-    "html5-reset": "^2.0"
+    "color": "^2.4"
   }
 }

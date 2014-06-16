@@ -1,1 +1,18 @@
-article
+{{>header}}
+
+<h1>{{meta.title}}</h1>
+
+{{{markdown article}}}
+
+<nav>
+  <ul>
+    {{#if meta.previous}}
+      <li>Prev: <a href="/{{meta.previous.slug}}">{{meta.previous.title}}</a></li>
+    {{/if}}
+    {{#if meta.next}}
+      <li>Next: <a href="/{{meta.next.slug}}">{{meta.next.title}}</a></li>
+    {{/if}}
+  </ul>
+</nav>
+
+{{>footer}}

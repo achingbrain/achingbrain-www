@@ -1,0 +1,14 @@
+{
+  "name": "achingbrain-www",
+  "version": "1.0.0",
+  "private": true,
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.0",
+    "html5-reset": "^2.0"
+  }
+}

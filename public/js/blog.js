@@ -1,11 +1,16 @@
 var jumboHeight = $('.jumbotron').outerHeight();
 
 $(window).scroll(function() {
-    var scrolled = $(window).scrollTop();
-    $('.bg').css('height', (jumboHeight - scrolled) + 'px');
-    $('.bg').css('background-position', '0 ' + (0 - (scrolled / 2)) + 'px');
-});
+  if(window.innerWidth < 480) {
+    return;
+  }
 
+  //var scrolled = $(window).scrollTop();
+    //$('.bg').css('height', (jumboHeight - scrolled) + 'px');
+    //$('.bg').css('background-position', '0 ' + (0 - (scrolled / 2)) + 'px');
+  //$('.jumbotron').css('background-position', '0 ' + (0 - (scrolled / 2)) + 'px');
+});
+/*
 var setBackgroundImage = function(now) {
   var mapRange = function(from, to, s) {
     return to[0] + (s - from[0]) * (to[1] - to[0]) / (from[1] - from[0]);
@@ -30,15 +35,15 @@ var setBackgroundImage = function(now) {
     lightness = maxLightness - lightness;
   }
 
-  var colour = '#808080';
-  $('.bg').css('background-color', one.color(colour).lightness(lightness).red(red).blue(blue).green(green).hex());
+  var colour = one.color('#808080').lightness(lightness).red(red).blue(blue).green(green).hex();
+  $('.jumbotron').css('background-color', colour);
 }
 
 setBackgroundImage(new Date());
 setInterval(function() {
   setBackgroundImage(new Date());
 }, 60000);
-
+*/
 /*
 var minute = 0;
 var hour = 0;

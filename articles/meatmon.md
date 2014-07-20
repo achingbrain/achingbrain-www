@@ -1,7 +1,7 @@
 meta:
   date: 2014-06-17 15:00:00
   title: Meatmon
-  subtitle: Smoking meat with wireless firmata
+  subtitle: Wirelessly smoking meat with firmata
 
 Inspired by a recent trip to the Adirondacks during which a good friend blew my
 mind with some awesome food and great company, I wanted to give hot smoking a
@@ -303,8 +303,10 @@ increase over time (I said it was rough).
 
 It stored the database in a local instance of [CouchDB](http://couchdb.apache.org/)
 and had a [Hapi](http://hapijs.com/) driven REST API that the johnny-five
-process would post info to.  It used [nano-repository](https://www.npmjs.org/package/nano-repository)
-to make database access a bit more bearable and [columbo](https://www.npmjs.org/package/columbo)
+process would post info to.  It used [wantsit](https://www.npmjs.org/package/wantsit)
+for [IOC](http://en.wikipedia.org/wiki/Inversion_of_control),
+[nano-repository](https://www.npmjs.org/package/nano-repository) to make
+database access a bit more bearable and [columbo](https://www.npmjs.org/package/columbo)
 for REST resource discovery.
 
 ![Meatmon](https://raw.githubusercontent.com/achingbrain/meatmon/master/assets/graph.jpg)
@@ -328,3 +330,8 @@ The changes I made to `ConfigurableFirmata` are in the `add-wireless` branch of
 
 You can see the johnny-five code and stat collector webapp in the
 [achingbrain/meatmon](https://github.com/achingbrain/meatmon) repository.
+
+## Other solutions are available
+
+Using an [XBee](http://www.digi.com/xbee/) probably would have been a lot
+easier, but they are 5x the price of the nRF24L01+ and I don't have any.

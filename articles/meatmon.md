@@ -334,4 +334,4 @@ You can see the johnny-five code and stat collector webapp in the
 ## Other solutions are available
 
 Using an [XBee](http://www.digi.com/xbee/) probably would have been a lot
-easier, but they are 5x the price of the nRF24L01+ and I don't have any.
+easier, but they are 5x the price of the nRF24L01+ and I don't own any.

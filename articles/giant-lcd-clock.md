@@ -3,25 +3,29 @@ meta:
   title: Giant LCD Clock
   subtitle: Building a(nother) giant LCD clock
 
-When [@olizilla](https://twitter.com/olizilla), [@_alanshaw](https://twitter.com/_alanshaw) and I assume our ultimate form, it is that of [NodeBots of London](http://www.meetup.com/NodeBots-of-London). This year we're running a series of events we've called the [NodeBots Battle Royale](http://london.nodebots.io).  In a nutshell everyone turns up at 10am on a Saturday and is issued with a challenge and a reference kit.  People have access to tools, spare parts and are encouraged to use their creativity to customise their kit in order to best their rivals when the competition starts at about 3:30.
+When [@olizilla](https://twitter.com/olizilla), [@_alanshaw](https://twitter.com/_alanshaw) and I assume our ultimate form, it is that of [NodeBots of London](http://www.meetup.com/NodeBots-of-London).
+
+This year we're running a series of events we've called the [NodeBots Battle Royale](http://london.nodebots.io).  In a nutshell everyone turns up at 10am on a Saturday and is issued with a challenge and a reference kit.  People have access to tools, spare parts and are encouraged to use their creativity to customise their kit in order to best their rivals when the competition starts at about 3:30.
 
 When we started the meetup, our aim was essentially to get good at electronics so we can build a Jaeger and we've been working towards that goal ever since.
 
 ![Jaeger](./img/giant-lcd-clock/jaeger.jpg)
 
-I figured what we needed was a [giant countdown clock](http://pacificrim.wikia.com/wiki/War_Clock) that would show the time remaining until the competition started (although counting down instead of up).
+We'd often talked about a 'Time since last high five' display similar to the [Time since last Kaiju attack clock](http://pacificrim.wikia.com/wiki/War_Clock) (which [Alan prototyped last January](https://www.youtube.com/watch?v=yaq7rFYXwAQ) and inadvertently led to us building the [high five machine](http://tableflip.github.io/nodeconf-highfive-pics) for our NodeBots workshops at NodeConf 2014).
 
-Inspired by the wonderful [12ft GPS Wall Clock](https://www.sparkfun.com/tutorials/47) on Sparkfun's website I started to build my own.
+I figured why not take it a step further and actually build a giant clock that would show the time remaining until the competition begins, maybe starting green and the gradually turning red and flashing as the deadline approaches to instil a sense of mild panic in the competitors.
 
 ![War clock](./img/giant-lcd-clock/clock.jpg)
 
+I found the wonderful [12ft GPS Wall Clock](https://www.sparkfun.com/tutorials/47) on Sparkfun's website which I used as a blueprint to build my own.
+
 The GPS clock used [12v light bars](https://www.sparkfun.com/products/12015) of type you get in kitchen lighting; with fourteen bars per numeral, two for each segment.  The lights are one colour and the whole bar is either on of off.  RJ45 cable and custom circuit boards were used to wire it all together.
 
-I've never been very good at making ethernet cable (and consequently have some unreliable cabling under my floorboards) and I didn't fancy making custom circuit boards - rather I wanted to run the whole thing from an Arduino or Raspberry Pi; neither or which can supply 12v without extra circuitry, so I needed to find a different solution.
+I've never been very good at making ethernet cable (and consequently have some unreliable cabling under my floorboards) and I didn't fancy making custom circuit boards - rather I wanted to run the whole thing from an Arduino or Raspberry Pi; neither or which can supply 12v without extra circuitry.  The single colour was also a bit of a downer so I needed to find a different solution.
 
 The answer comes in the form of [WS2812 LEDs](http://www.tweaking4all.com/hardware/arduino/arduino-ws2812-led), also known as "[NeoPixels](http://www.adafruit.com/category/168)".  UK supplier Proto-Pic sells [strips of these](http://proto-pic.co.uk/led-rgb-strip-addressable-bare-5m) up to 5m in length - they run at 5v and since each LED has a chip embedded in it they are individually addressable - meaning it only takes three wires to run hundreds of them - they are even RGB LEDs to boot.
 
-An important safety tip - wear googles and a mask.  There will be little bits of stuff flying around everywhere and you don't want that stuff in your eyes or sinuses.  Make sure your mask fits better than mine...
+An important safety tip - wear googles and a mask.  There will be little bits of sharp stuff flying around everywhere along with loads of wood and plastic dust and you don't want any of that stuff in your eyes or sinuses.  Make sure your mask fits better than mine...
 
 ![Saftey First](./img/giant-lcd-clock/safteyfirst.jpg)
 
@@ -33,7 +37,9 @@ I used a Dremel and a Stanley knife to cut the template out.  The multipurpose [
 
 ![Cutting](./img/giant-lcd-clock/cuttingtemplate.jpg)
 
-Next up was cutting the polystyrene.  This made an incredible amount of mess.  I tried with a circular saw, the Dremel wood cutting blades, even some [third party serrated blades](http://www.amazon.co.uk/dp/B004ANKR9M), all of which statically charged the polystyrene so it stuck to every available nearby surface.
+Next up was cutting the polystyrene.  This made an incredible amount of mess.  I tried with a circular saw, the Dremel wood cutting blades, even some [third party serrated blades](http://www.amazon.co.uk/dp/B004ANKR9M), all of which statically charged the polystyrene so it stuck to every available nearby surface and regularly clogged up power tool air vents like a champ.
+
+Keep the hoover close and don't do this outside unless you want to stare at decomposing polystyrene balls in your garden for the next [I don't know, ever](http://www.ask.com/science/long-styrofoam-decompose-618324f067462d41#full-answer).
 
 ![Workbench](./img/giant-lcd-clock/workbench.jpg)
 
@@ -49,7 +55,7 @@ They were cut from [25mm insulation boards](http://www.wickes.co.uk/Wickes-25mm-
 
 ![Painted polystyrene](./img/giant-lcd-clock/paintedpolystyrene.jpg)
 
-The soldering begins.  Note the frames made from pine stripwood - the kind of stuff you make door jambs from - I chose 15mm x 25mm x 2400mm sticks.
+The soldering begins.  Note the frames made from pine stripwood - the kind of stuff [doorjambs](http://en.wikipedia.org/wiki/Doorjamb) are made from - I chose 15mm x 25mm x 2400mm sticks.
 
 Each LED was cut out from the strip individually and hot-glued onto the hardboard.
 

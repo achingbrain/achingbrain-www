@@ -119,7 +119,7 @@ And that's it!
 
 If I could have my time again, I'd probably try to find pre-made RGB LEG bars or strips with wider spacing that would obviate the need for quite so much soldering.
 
-Also the connectors between the numerals are just [3x1 crimp connectors](http://proto-pic.co.uk/0-1-2-54mm-crimp-connector-housing-1x3-pin-25-pack) and feel a bit flimsy, they should probably be something more robust.  I fancy trying to find some 3-pin mini jacks like the sort you get with mobile phone handsfree kits, but for the moment I'm just happy I don't have to solder anything for a while.
+Also the connectors between the numerals are just 0.1" pitch [3x1 crimp connectors](http://proto-pic.co.uk/0-1-2-54mm-crimp-connector-housing-1x3-pin-25-pack) glued into the frames holding [female crimp pins](http://proto-pic.co.uk/female-crimp-pins-for-0-1-housings-100-pack) and feel a bit flimsy, they should probably be something more robust.  I fancy trying to find some 3-pin mini jacks like the sort you get with mobile phone handsfree kits, but for the moment I'm just happy I don't have to solder anything for a while.
 
 You can still see the individual LEDs which is a shame.  Pre-frosted plexiglas might be a reasonable solution to this although it might get expensive.  Other options are a dab of hot glue over each LED to diffuse the light further and maybe another sheet of privacy film.
 

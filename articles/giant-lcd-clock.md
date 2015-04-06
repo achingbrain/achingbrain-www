@@ -93,8 +93,6 @@ All stacked up for drying:
 
 The whole show is run from a Raspberry Pi B using node.js and the rather excellent [rpi-ws281x-native](https://www.npmjs.com/package/rpi-ws281x-native) module.  At the moment it only works with the original B and B+ Pis, sadly not rev2 as it relies on the timing of the PWM hardware which seems to have changed with the updated model.
 
-There was a small amount of weirdness in that the module requires a `Uint32Array` to be passed to it with the pixel data - in recent versions of v8 (e.g. node 0.12, io.js) if you create a `Uint32Array` with length 16 or less you get something back that is not a `Uint32Array`.  See the [raspberry-node/node-rpi-ws281x-native#6](https://github.com/raspberry-node/node-rpi-ws281x-native/issues/6) for further discussion.
-
 Power is provided by a [5v 10a laptop style adapter](http://www.syncrolight.co.uk/ProductDetails/PS-5V-DC-10A-LT.aspx).  With every LED showing white, the clock has the capability of drawing about 16 amps, but that's not how I'm planning on using it.
 
 The chips on the strip that control the LEDs are very sensitive to timing, so the library uses the PWM pin of the Pi to signal them.  The Pi outputs 3.3v on it's GPIO pins but the lights require 5v - initially I had this going through a [logic level converter](https://www.sparkfun.com/products/12009) and it worked ok for a few lights but with all the LEDs chained together after a while the signal got corrupted and it started to look something like the [writing from The Predator](https://crashlanden.files.wordpress.com/2010/07/predator-52.png).

@@ -49,5 +49,8 @@
     "undef": true,
     "white": true,
     "mocha": true
+  },
+  "engines": {
+    "iojs": "1.6.x"
   }
 }

@@ -51,6 +51,6 @@
     "mocha": true
   },
   "engines": {
-    "iojs": "1.6.x"
+    "node": "0.12.x"
   }
 }

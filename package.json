@@ -6,33 +6,48 @@
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover _mocha test",
-    "coveralls": "istanbul cover _mocha test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coveralls": "istanbul cover _mocha test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/achingbrain/achingbrain-www.git"
   },
   "dependencies": {
+    "async": "^0.9",
+    "columbo": "^3.0.1",
     "express": "^4.0",
     "express3-handlebars": "^0.5",
-    "logfmt": "^1.0",
-    "underscore.string": "^2.3",
-    "wantsit": "^1.0",
-    "rc": "^0.4",
     "js-yaml": "^3.0",
+    "logfmt": "^1.0",
     "marked": "^0.3",
-    "async": "^0.9",
-    "moment": "^2.0"
+    "moment": "^2.0",
+    "pg": "^4.3.0",
+    "rc": "^1.0.1",
+    "underscore.string": "^3.0.3",
+    "wantsit": "^2.0",
+    "bower": "^1.0"
   },
   "devDependencies": {
-    "mocha": "^1.0",
-    "chai": "^1.0",
-    "sinon": "^1.8",
-    "istanbul": "^0.3",
+    "chai": "^2.2.0",
     "coveralls": "^2.8",
+    "istanbul": "^0.3",
+    "mocha": "^2.2.4",
+    "sinon": "^1.8",
     "testsuite": "^1.0"
   },
-  "engines": {
-    "node": "0.10.x"
+  "jshintConfig": {
+    "asi": true,
+    "browser": false,
+    "browserify": true,
+    "curly": false,
+    "expr": true,
+    "indent": 2,
+    "loopfunc": true,
+    "node": true,
+    "trailing": true,
+    "undef": true,
+    "white": true,
+    "mocha": true
   }
 }

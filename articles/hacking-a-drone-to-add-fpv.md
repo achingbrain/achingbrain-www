@@ -1,6 +1,6 @@
 meta:
   date: 2016-06-17 09:00:00
-  title: Hacking an FPV Drone
+  title: Hacking a drone to add FPV
 
 Recently [Bernard](https://twitter.com/_bmordan) has been getting into drone flying and knocked up his first FPV system
 so I thought I'd have a go too.
@@ -12,14 +12,14 @@ After reading a few reviews I settled on the [Dromida Ominus](https://www.amazon
 modes so you can vary the responsiveness as you become a better pilot.  With a bit of dremeling you can even
 [use Alias parts to repair it](https://www.youtube.com/watch?v=1hANFkxQlhs)!
 
-![Ominus](./img/hacking-an-fpv-drone/ominus.jpg)
+![Ominus](./img/hacking-a-drone-to-add-fpv/ominus.jpg)
 
 It's not got a built in camera though so that would need addressing.  Most camera drones of this class are essentially
 flying WiFi hotspots which you connect to with your smartphone.  WiFi video like this has a little bit of lag which is
 not fantastic for drone flying, instead most FPV setups transmit video directly over 2.4GHz or 5.8GHz (e.g. the same
 frequencies as WiFi) but without the overhead of a network protocol.
 
-![Camera](./img/hacking-an-fpv-drone/camera.jpg)
+![Camera](./img/hacking-a-drone-to-add-fpv/camera.jpg)
 
 I wanted a camera that was small, light & reusable so picked up a [Spektrum VA1100 Ultra Micro FPV Camera](http://www.wheelspinmodels.co.uk/i/237470/) and a matching [FatShark Attitude V3](https://www.amazon.co.uk/fatshark-Attitude-Goggles-Headset-Modular/dp/B01F2XKVI0/ref=sr_1_1?ie=UTF8&qid=1466162102&sr=8-1&keywords=fatshark+attitude+v3) headset.  The headset was by far the most expensive component of the setup but I will be able to reuse it
 with any later drone setups so I see it as more of an investment for the future.  It's also fully modular so components
@@ -30,25 +30,25 @@ The Ominus doesn't have a separate power connector for a camera but since the ca
 it directly to the flight battery.  The camera came with a Y cable for this purpose but the connectors are tiny and
 not the same as the battery connector.
 
-![Connectors](./img/hacking-an-fpv-drone/connectors.jpg)
+![Connectors](./img/hacking-a-drone-to-add-fpv/connectors.jpg)
 
 My solution was to cut one of the branches of the Y cable, strip the ends and
 solder it directly to the battery terminal on the flight PCB.
 
 Exposing the FPV is just a case of loosening this screw and the same one on the opposite side:
 
-![Screw](./img/hacking-an-fpv-drone/screw.jpg)
+![Screw](./img/hacking-a-drone-to-add-fpv/screw.jpg)
 
 Then solder the wires to the top side of the PCB.  The battery connects to the underside so there's plenty of space. I
 also put a bit of hot glue over the solder joints to protect them.
 
-![Battery](./img/hacking-an-fpv-drone/battery.jpg)
+![Battery](./img/hacking-a-drone-to-add-fpv/battery.jpg)
 
 Finally connect the camera and mount it to the top of the drone.  I've just used blu-tac for this because I wanted to be
 able to adjust the positioning and also if (when) I crash it, the camera just pops off the top instead of the relatively
 fragile antenna taking the brunt of the blow.
 
-![Drone](./img/hacking-an-fpv-drone/drone.jpg)
+![Drone](./img/hacking-a-drone-to-add-fpv/drone.jpg)
 
 The only other thing that surprised me was that although the headset battery say 'Charge with provided charger only' no
 charger was actually provided which seems like a bit of a swizz considering how much it costs.  A quick trip to Amazon

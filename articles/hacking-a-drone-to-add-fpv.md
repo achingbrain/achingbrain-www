@@ -14,10 +14,10 @@ modes so you can vary the responsiveness as you become a better pilot.  With a b
 
 ![Ominus](./img/hacking-a-drone-to-add-fpv/ominus.jpg)
 
-It's not got a built in camera though so that would need addressing.  Most camera drones of this class are essentially
-flying WiFi hotspots which you connect to with your smartphone.  WiFi video like this has a little bit of lag which is
-not fantastic for drone flying, instead most FPV setups transmit video directly over 2.4GHz or 5.8GHz (e.g. the same
-frequencies as WiFi) but without the overhead of a network protocol.
+The basic version does not have a built in camera though so that would need addressing.  Most camera drones of this
+class are essentially flying WiFi hotspots which you connect to with your smartphone.  WiFi video like this has a little
+bit of lag which is not fantastic for drone flying, instead most FPV setups transmit video directly over 2.4GHz or
+5.8GHz (e.g. the same frequencies as WiFi) but without the overhead of a network protocol.
 
 ![Camera](./img/hacking-a-drone-to-add-fpv/camera.jpg)
 

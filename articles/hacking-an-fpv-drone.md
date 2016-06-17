@@ -56,7 +56,8 @@ had a [Keenstone K6AC+ charger](https://www.amazon.co.uk/UPGRADED-Keenstone®-Un
 on my desk 24 hours later, which seems to work, although I had to lower the maximum output power from 8A to 1A as it was
 overloading the battery.
 
-Here are Bernard and I at the inaugural meeting of the South London Drone Racing Society flying over Peckham Rye:
+Here are Bernard and I at the inaugural meeting of the South London Drone Racing Society flying over Peckham Rye (the
+video is from a Polaroid Cube camera mounted on his drone):
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/aOJb2tB2iAU" frameborder="0" allowfullscreen></iframe>
 

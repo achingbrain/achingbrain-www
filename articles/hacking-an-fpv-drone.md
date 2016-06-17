@@ -10,7 +10,7 @@ most of the time crashing them into the ground I didn't want to spend too much.
 
 After reading a few reviews I settled on the [Dromida Ominus](https://www.amazon.co.uk/Dromida-Ominus-UAV-Quadcopter-Green/dp/B00NHLALDK).  It's a clone of the more expensive LaTrax Alias - as drones go it's cheap, durable and has multiple flight
 modes so you can vary the responsiveness as you become a better pilot.  With a bit of dremeling you can even
-[use the more durable Alias parts to repair it](https://www.youtube.com/watch?v=1hANFkxQlhs)!
+[use Alias parts to repair it](https://www.youtube.com/watch?v=1hANFkxQlhs)!
 
 ![Ominus](./img/hacking-an-fpv-drone/ominus.jpg)
 
